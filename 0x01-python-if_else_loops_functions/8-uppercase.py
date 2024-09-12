@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 def uppercase(s):
-    result = []
+    result = ''
     for char in s:
         if 'a' <= char <= 'z':
-            result.append(chr(ord(char) - 32))
+            result += chr(ord(char) - 32))
         else:
             result.append(char)
-    print(''.join(result))
+    print("{}".format(result))
