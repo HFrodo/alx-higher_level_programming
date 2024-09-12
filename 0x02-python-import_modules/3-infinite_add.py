@@ -9,11 +9,10 @@ def main():
     result = 0
 
     for arg in args:
-        result += int(arg)        
-
+        result += int(arg)
 
     print(result)
 
-    
+
 if __name__ == "__main__":
     main()
