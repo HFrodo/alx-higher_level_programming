@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 from calculator_1 import add, sub, mul, div
 
+
 def main():
     a = 10
     b = 5
@@ -15,7 +16,8 @@ def main():
     print("{0} * {1} = {2}".format(a, b, result))
 
     result = div(a, b)
-    print("{0} \ {1} = {2}".format(a, b, result))
+    print("{0} / {1} = {2}".format(a, b, result))
+
 
 if __name__ == "__main__":
     main()
