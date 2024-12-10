@@ -1,4 +1,11 @@
 #!/usr/bin/python3
+
+"""
+Module:
+    Program for printing a square
+"""
+
+
 class Square:
     """
     An class representning a square
