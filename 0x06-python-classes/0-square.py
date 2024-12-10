@@ -1,4 +1,9 @@
 #!/usr/bin/python3
 class Square:
-    """An empty class for a square"""
+    """
+    An class representning a square
+
+    This class is currently empty and is used to construct a
+    low resolution representation of a square
+    """
     pass
