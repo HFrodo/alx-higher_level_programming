@@ -8,7 +8,7 @@ Module:
 
 class Square:
     """
-    An class representning a square
+    A class representing a square
 
     This class is currently empty and is used to construct a
     low resolution representation of a square
