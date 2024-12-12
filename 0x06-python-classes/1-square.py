@@ -11,16 +11,10 @@ class Square:
     Attributes:
         __size(int): The size of the square (private).
     '''
-
-
     def __init__(self, __size):
         '''
-        Initializes the Square class with a private instance attribute: "__size"
-    
+        Initializes the Square class with private instance attribute:__size
         Args:
             __size(int): The size of the square.
         '''
-
-
         self.__size = __size
-
