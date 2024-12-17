@@ -9,22 +9,23 @@ Designed to obtain area of square
 
 class Square:
     '''
-    This is the "Square" class
+    A class that represents a Square
     It holds the attributes and methods for creating a square
 
     Attributes:
-        __size(float): The size of the square (private)
+        __size(float): The size of one side of the square (private)
     '''
     def __init__(self, size=0):
         '''
-        Initializes the square object with a "size" parameter
-
-        Parameters:
-            size(float): the size of the square
+        Initializes a square object with a given size
 
         Args:
-            __size(float): is the private instance attribute representing
-            the size of the "Square"
+            size(float): the size of one side of the square. Must be
+                        a non-negative integer. Defaults to 0.
+
+        Raises:
+            TypeError: If "size" does not match a float type
+            ValueError: If "size" is a negative number
         '''
         if not isinstance(size, int):
             raise TypeError("size must be an integer")
