@@ -16,7 +16,7 @@ class Square:
         __size (int): the size of the square (private).
     '''
 
-    def __init__(self, size):
+    def __init__(self, size=0):
         '''
         The init method initializes the Square instance with a given size.
 
@@ -52,7 +52,7 @@ class Square:
             ValueError: If size is negative.
         '''
         if not isinstance(value, int):
-            raise TypeError("size must be int")
+            raise TypeError("size must be an integer")
         elif (value < 0):
             raise ValueError("size must be >= 0")
         else:
