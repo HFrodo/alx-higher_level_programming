@@ -71,12 +71,14 @@ class Square:
 
     def my_print(self):
         '''
-        Prints out the actual square using "#"
+        Prints out the actual square using "#".
+        If size is 0, it prints an empty line.
 
         Args:
-            __size(int): side length of square
+            None
         '''
-        for i in range(self.__size):
-            if (self.__size == 0):
-                print("")
-            print("#" * self.__size)
+        if (self.__size == 0):
+            print("")
+        else:
+            for i in range(self.__size):
+                print("#" * self.__size)
