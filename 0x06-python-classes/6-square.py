@@ -2,13 +2,16 @@
 '''
 This module creates a square from the Square class
 
-The class has an attribute for the side length                              It uses property setters & getters to validate input                        Methods within it are used to calculate the area and print out the square   
+The class has an attribute for the side length
+It uses property setters & getters to validate input
+Methods within it are used to calculate the area and print out the square
 '''
+
 
 class Square:
     '''
     This class defines the square with size and position attributes.
-    
+
     Attributes:
         __size(int): the side length of the square
         __position(int): The relative position of the square
@@ -18,7 +21,7 @@ class Square:
         ValueError: if size is greater than 0
     '''
 
-    def __init__(self, size=0, position=(0,0)):
+    def __init__(self, size=0, position=(0, 0)):
         '''
         Initializes the square instance with
         size and position private attributes
@@ -64,7 +67,7 @@ class Square:
     @property
     def position(self):
         '''
-        Getter method 
+        Getter method
 
         Returns:
             int: position of the square
