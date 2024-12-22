@@ -52,7 +52,8 @@ class Rectangle:
     def height(self):
         '''
         Getter property for height attribute
-                                                                                    Returns:
+
+        Returns:
             int: __height
         '''
         return self.__height
@@ -65,7 +66,8 @@ class Rectangle:
         Raises:
             TypeError: if height is not an integer type
             ValueError: if height < 0
-                                                                                    Returns:
+
+        Returns:
             int: __height
         '''
         if not isinstance(value, int):
