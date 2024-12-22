@@ -23,6 +23,10 @@ class Rectangle:
         Args:
             width(int): horizontal length of the rectangle (defaults to 0)
             height(int): vertical length of rectangle (defaults to 0)
+
+        Raises:
+            TypeError: if width/ height is not an integer
+            ValueError: if width/height is less than 0
         '''
         self.__height = height
         self.__width = width
@@ -47,7 +51,7 @@ class Rectangle:
 
         Raises:
             TypeError: if width is not an integer type
-            ValueError: if width < 0
+            ValueError: if width is less than 0
 
         Returns:
             int: __width
@@ -78,7 +82,7 @@ class Rectangle:
 
         Raises:
             TypeError: if height is not an integer type
-            ValueError: if height < 0
+            ValueError: if height is less than 0
 
         Returns:
             int: __height
