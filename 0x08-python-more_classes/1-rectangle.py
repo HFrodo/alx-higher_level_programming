@@ -16,45 +16,13 @@ class Rectangle:
             __width(int): Holds the horizontal length of the rectangle
             __height(int): Holds the vertical length of rectangle
         '''
-        self.__width = width
         self.__height = height
-
-    @property
-    def width(self):
-        '''
-        Getter property for the width attribute
-
-        Returns:
-            int: __width
-        '''
-        return self.__width
-
-    @width.setter
-    def width(self, value):
-        '''
-        Setter property for the width attribute
-
-        Args:
-            value(int): the new width value
-
-        Raises:
-            TypeError: if width is not an integer type
-            ValueError: if width < 0
-
-        Returns:
-            int: __width
-        '''
-        if not isinstance(value, int):
-            raise TypeError("width must be an integer")
-        elif (value < 0):
-            raise ValueError("width must be >= 0")
-        else:
-            self.__width = value
+        self.__width = width
 
     @property
     def height(self):
         '''
-        Getter property for height attribute
+        Getter property for the height attribute
 
         Returns:
             int: __height
@@ -67,7 +35,7 @@ class Rectangle:
         Setter property for the height attribute
 
         Args:
-            value(int): The new height value.
+            value(int): the new height value
 
         Raises:
             TypeError: if height is not an integer type
@@ -82,3 +50,35 @@ class Rectangle:
             raise ValueError("height must be >= 0")
         else:
             self.__height = value
+
+    @property
+    def width(self):
+        '''
+        Getter property for width attribute
+
+        Returns:
+            int: __width
+        '''
+        return self.__width
+
+    @width.setter
+    def width(self, value):
+        '''
+        Setter property for the width attribute
+
+        Args:
+            value(int): The new width value.
+
+        Raises:
+            TypeError: if width is not an integer type
+            ValueError: if width < 0
+
+        Returns:
+            int: __width
+        '''
+        if not isinstance(value, int):
+            raise TypeError("width must be an integer")
+        elif (value < 0):
+            raise ValueError("width must be >= 0")
+        else:
+            self.__width = value
