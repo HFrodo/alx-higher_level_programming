@@ -32,7 +32,7 @@ class Rectangle:
     @width.setter
     def width(self, value):
         '''
-        Setter property for the width attribute
+        Setter property for the private instance width attribute
 
         Args:
             value(int): the new width value
@@ -44,7 +44,7 @@ class Rectangle:
         Returns:
             int: __width
         '''
-        if not isinstance(value, int):
+        if type(value) is not int:
             raise TypeError("width must be an integer")
         if value < 0:
             raise ValueError("width must be >= 0")
@@ -80,12 +80,3 @@ class Rectangle:
         if value < 0:
             raise ValueError("height must be >= 0")
         self.__height = value
-
-    def __str__(self):
-        '''
-        String representation of the Rectangle object.
-
-        Returns:
-            str: The string representation of the rectangle.
-        '''
-        return f'{{"_Rectangle__height": {self.__height}, "_Rectangle__width": {self.__width}}}'
