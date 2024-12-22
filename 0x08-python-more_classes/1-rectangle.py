@@ -28,8 +28,8 @@ class Rectangle:
             TypeError: if width/ height is not an integer
             ValueError: if width/height is less than 0
         '''
-        self.__height = height
-        self.__width = width
+        self.height = height
+        self.width = width
 
     @property
     def width(self):
