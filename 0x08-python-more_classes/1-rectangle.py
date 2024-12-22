@@ -82,3 +82,12 @@ class Rectangle:
             raise ValueError("height must be >= 0")
         else:
             self.__height = value
+
+    def __str__(self):
+        '''
+        String representation of the Rectangle object.
+
+        Returns:
+            str: The string representation of the rectangle.
+        '''
+        return f'{{"_Rectangle__height": {self.__height}, "_Rectangle__width": {self.__width}}}'
