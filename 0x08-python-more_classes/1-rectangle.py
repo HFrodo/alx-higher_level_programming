@@ -8,13 +8,21 @@ And property setters and getters to assign values to create the obj
 
 
 class Rectangle:
+    '''
+    Class that defines the rectangle object (based on 0-rectangle.py).
+
+    Attributes:
+        __width(int): width of rectangle
+        __height(int): height of rectangle
+
+    '''
     def __init__(self, width=0, height=0):
         '''
         This initializes the Rectangle object with height and width
 
-        Attributes:
-            __width(int): Holds the horizontal length of the rectangle
-            __height(int): Holds the vertical length of rectangle
+        Args:
+            width(int): horizontal length of the rectangle (defaults to 0)
+            height(int): vertical length of rectangle (defaults to 0)
         '''
         self.__height = height
         self.__width = width
