@@ -34,6 +34,9 @@ class Rectangle:
         '''
         Setter property for the width attribute
 
+        Args:
+            value(int): the new width value
+
         Raises:
             TypeError: if width is not an integer type
             ValueError: if width < 0
@@ -62,6 +65,9 @@ class Rectangle:
     def height(self, value):
         '''
         Setter property for the height attribute
+
+        Args:
+            value(int): The new height value.
 
         Raises:
             TypeError: if height is not an integer type
