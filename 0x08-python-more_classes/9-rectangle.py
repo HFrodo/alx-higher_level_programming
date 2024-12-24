@@ -28,7 +28,7 @@ class Rectangle:
             int: size
         '''
         return cls(size, size)
-    
+
     def __init__(self, width=0, height=0):
         '''
         This initializes the Rectangle object with height and width
